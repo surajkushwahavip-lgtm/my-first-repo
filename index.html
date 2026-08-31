@@ -1,15 +1,296 @@
-<h1> Hello Dosto </h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Josh Batch 10 🚀</title>
 
-<h2> Aapka swaagat hai josh batch 10 me </h2>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-BOOOM!
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            min-height: 100vh;
+            color: white;
+            background:
+                radial-gradient(circle at top left, #ff1744 0%, transparent 30%),
+                radial-gradient(circle at bottom right, #00e676 0%, transparent 30%),
+                linear-gradient(135deg, #050505, #111827, #030712);
+            overflow-x: hidden;
+        }
 
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: auto;
+        }
 
-this is a feature
+        /* Navbar */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 25px 0;
+        }
 
-good feature
+        .logo {
+            font-size: 25px;
+            font-weight: bold;
+            color: #00ff88;
+        }
 
-I have fixed this
-adding coolest feature
-adding cool feature
+        .badge {
+            padding: 8px 16px;
+            border: 1px solid #00ff88;
+            border-radius: 30px;
+            color: #00ff88;
+            font-size: 14px;
+        }
 
+        /* Hero */
+        .hero {
+            text-align: center;
+            padding: 90px 20px 60px;
+        }
+
+        .hero h1 {
+            font-size: clamp(45px, 8vw, 85px);
+            line-height: 1;
+            margin-bottom: 20px;
+            background: linear-gradient(90deg, #ff1744, #ffeb3b, #00ff88);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero h2 {
+            font-size: clamp(22px, 4vw, 38px);
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            max-width: 650px;
+            margin: auto;
+            color: #b8c1cc;
+            font-size: 18px;
+            line-height: 1.7;
+        }
+
+        .boom {
+            display: inline-block;
+            margin-top: 35px;
+            padding: 14px 30px;
+            border-radius: 50px;
+            background: linear-gradient(90deg, #ff1744, #ff9100);
+            font-size: 20px;
+            font-weight: bold;
+            box-shadow: 0 0 30px rgba(255, 23, 68, 0.4);
+            animation: pulse 2s infinite;
+        }
+
+        /* Features */
+        .section-title {
+            text-align: center;
+            font-size: 35px;
+            margin: 50px 0 30px;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            gap: 20px;
+            padding-bottom: 70px;
+        }
+
+        .card {
+            padding: 28px;
+            border-radius: 20px;
+            background: rgba(255, 255, 255, 0.07);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            backdrop-filter: blur(12px);
+            transition: 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            border-color: #00ff88;
+            box-shadow: 0 15px 40px rgba(0, 255, 136, 0.15);
+        }
+
+        .icon {
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+
+        .card h3 {
+            font-size: 21px;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            color: #aeb7c4;
+            line-height: 1.6;
+        }
+
+        .excellent {
+            border-color: rgba(255, 235, 59, 0.5);
+        }
+
+        .excellent h3 {
+            color: #ffeb3b;
+        }
+
+        .dev {
+            border-color: rgba(255, 23, 68, 0.5);
+        }
+
+        .dev h3 {
+            color: #ff5252;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: #8b95a5;
+            border-top: 1px solid rgba(255,255,255,0.1);
+        }
+
+        footer span {
+            color: #00ff88;
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.06);
+            }
+        }
+
+        @media (max-width: 600px) {
+            .hero {
+                padding-top: 60px;
+            }
+
+            nav {
+                padding: 20px 0;
+            }
+
+            .badge {
+                font-size: 12px;
+            }
+
+            .section-title {
+                font-size: 28px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Navbar -->
+        <nav>
+            <div class="logo">⚡ JOSH BATCH 10</div>
+            <div class="badge">🚀 Developer Mode</div>
+        </nav>
+
+        <!-- Hero -->
+        <section class="hero">
+            <h1>Hello Dosto 👋</h1>
+
+            <h2>Aapka Swaagat Hai <br>
+                <span style="color:#00ff88;">Josh Batch 10</span> Mein 🔥
+            </h2>
+
+            <p>
+                Welcome to the place where ideas turn into features,
+                bugs turn into solutions, and developers keep building
+                something cooler every day.
+            </p>
+
+            <div class="boom">
+                💥 BOOOM!
+            </div>
+        </section>
+
+        <!-- Features -->
+        <h2 class="section-title">🚀 What's New?</h2>
+
+        <section class="features">
+
+            <div class="card">
+                <div class="icon">✨</div>
+                <h3>This is a Feature</h3>
+                <p>
+                    A brand-new feature has been added to make
+                    the experience better.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="icon">🔥</div>
+                <h3>Good Feature</h3>
+                <p>
+                    Simple, clean and useful improvements
+                    are making the project stronger.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="icon">🛠️</div>
+                <h3>Bug Fixed</h3>
+                <p>
+                    I found the problem, fixed it,
+                    and made the application more stable.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="icon">🚀</div>
+                <h3>Coolest Feature</h3>
+                <p>
+                    Added another cool feature because
+                    ordinary is never enough.
+                </p>
+            </div>
+
+            <div class="card excellent">
+                <div class="icon">👑</div>
+                <h3>Excellent Feature</h3>
+                <p>
+                    This one is special — designed,
+                    developed and delivered by ME.
+                </p>
+            </div>
+
+            <div class="card dev">
+                <div class="icon">💻</div>
+                <h3>Dev Change</h3>
+                <p>
+                    A new change directly from the
+                    development branch.
+                </p>
+            </div>
+
+        </section>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        Built with ❤️ &nbsp;|&nbsp;
+        <span>Josh Batch 10</span>
+        &nbsp;|&nbsp; Keep Coding 🚀
+    </footer>
+
+</body>
+</html>
