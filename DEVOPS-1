@@ -1,0 +1,4 @@
+# This is the solution for Devops-1
+git add .
+git commit -m "Devops-1"
+git push origin Devops-1
